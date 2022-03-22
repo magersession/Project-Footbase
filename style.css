@@ -1,0 +1,791 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+
+body {
+	font: 16px/28px tahoma, sans-serif;
+	background-color: #eaeaea;
+	background-image: url(img/bg.png);
+	color: #333;
+}
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 3px solid salmon;
+	z-index: 9999;
+}
+
+.container {
+	width: 960px;
+	margin: 80px auto;
+	background-color: white;
+	position: relative;
+}
+
+.twitter {
+	width: 200px;
+	height: 200px;
+	background-image: url(img/twitter.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: -14px;
+	right: -14px;
+}
+
+.header {
+	padding: 20px;
+	padding-bottom: 15px;
+}
+
+.header .judul {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+.hero {
+	height: 300px;
+	background-image: url(img/hero.jpg);
+	background-size: cover;
+	background-position: 0 -50px;
+	border-top: 5px solid lightskyblue;
+	border-bottom: 5px solid salmon;
+}
+
+.main {
+	width: 800px;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.main h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.main .penulis {
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.main strong {
+	font-weight: bold;
+}
+
+.main p {
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+
+.sidebar img {
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
+}
+
+.footer{
+	background-color: #333;
+	padding: 10px;
+}
+
+.footer .copy {
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+	
+}
+
+/* Cards */
+
+.catalog {
+	width: 940px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.catalog .three {
+	float: left;
+}
+
+.player {
+	float: left;
+	width: 249px;
+	height: 328px;
+	text-align: center;
+	color: #d3be67;
+	font-family: Verdana;
+}
+
+.cards-shape {
+	border: 1px solid black;
+	border-radius: 20px;
+	background: radial-gradient(circle farthest-corner, blue, mediumblue, darkblue);
+}
+
+.cards-up {
+	float: left;
+	width: 300px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.cards-up-left {
+	float: left;
+	width: 50px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.cards-up-right {
+	float: right;
+	width: 160px;
+	margin-right: 50px;
+}
+
+.img-player {
+	margin-top: -10px;
+}
+
+.img-club, .img-nationality {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.player-rating {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.player-position {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.player-name {
+	margin: 5px auto;
+}
+
+.p-n {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.stats-left {
+	float: left;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.stats-right {
+	float: right;
+	margin-right: 50px;
+}
+
+.stats-left, .stats-right {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+/* Service */
+
+.formation {
+	width: 900px;
+	height: 1200px;
+	margin: auto;
+	background-color: black;
+}
+
+.field {
+	width: 880px;
+	height: 1100px;
+	border: 1px solid white;
+	position: absolute;
+	top: 520px;
+	left: 40px;
+}
+
+.keeper-1 {
+	width: 250px;
+	height: 150px;
+	border: 1px solid white;
+	position: absolute;
+	top: 1470px;
+	left: 355px;
+}
+
+.keeper-2 {
+	width: 800px;
+	height: 350px;
+	border: 1px solid white;
+	position: absolute;
+	top: 1270px;
+	left: 80px;
+}
+
+.kotak {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	float: left;
+}
+
+.keeper-3 {
+	height:70px;
+	border: 1px solid white;
+	border-radius: 100px 100px 0 0;
+	position: absolute;
+	top: 1178px;
+	left: 385px;
+}
+
+.mid-circle-1{
+	margin-top: 110px;
+	height:70px;
+	border: 1px solid white;
+	border-radius: 0 0 100px 100px;
+	position: absolute;
+	top: 960px;
+	left: 385px;
+}
+
+.mid-line {
+	width: 880px;
+	height: 0;
+	border: 1px solid white;
+	position: absolute;
+	top: 1070px;
+	left: 40px;
+}
+
+.mid-circle-2 {
+	height:70px;
+	border: 1px solid white;
+	border-radius: 100px 100px 0 0;
+	position: absolute;
+	top: 979px;
+	left: 385px;
+}
+
+.away-keeper-3 {
+	margin-top: 110px;
+	height:70px;
+	border: 1px solid white;
+	border-radius: 0 0 100px 100px;
+	position: absolute;
+	top: 760px;
+	left: 385px;
+}
+
+.away-keeper-2 {
+	width: 800px;
+	height: 350px;
+	border: 1px solid white;
+	position: absolute;
+	top: 520px;
+	left: 80px;
+}
+
+.away-keeper-1 {
+	width: 250px;
+	height: 150px;
+	border: 1px solid white;
+	position: absolute;
+	top: 520px;
+	left: 355px;
+}
+
+.caption {
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.caption1{
+	color: white;
+	text-shadow: 0 0 20px yellow;
+}
+
+.caption2 {
+	font-weight: normal;
+	color: white;
+	text-shadow: 0 0 10px #fff, 
+					0 0 20px #fff, 
+					0 0 30px #fff, 
+					0 0 40px #ff00de, 
+					0 0 70px #ff00de, 
+					0 0 80px #ff00de, 
+					0 0 100px #ff00de, 
+					0 0 150px #ff00de;
+}
+
+.first-name{
+	letter-spacing: 2px;
+	color: blue;
+}
+
+.last-name {
+	font-size: 16px;
+	font-weight: 900;
+	color: white;
+}
+
+.img {
+	width: 160px;
+	height: 182px;
+	border: 1px solid white;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin : auto;
+	box-shadow: inset 0 0 15px 5px rgba(64,224,208,.5);
+	position: relative;
+	z-index: 1;
+	background-color: black;
+}
+
+.back {
+	width: 160px;
+	height: 182px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+}
+
+.img-messi {
+	width: 160px;
+	height: 182px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(img/service/11.png) no-repeat;
+}
+
+.fade-away {
+	width: 160px;
+	height: 182px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	background: linear-gradient(to top, 
+				rgba(255,255,255,1) 5%, 
+				rgba(0,0,0,0) 100%);
+}
+
+.forward {
+	width: 900px;
+	position: relative;
+	margin: 10px auto;
+	top: 40px;
+}
+
+.mid {
+	width: 900px;
+	position: relative;
+	top: 57px;
+	margin: 10px auto;
+}
+
+.forward .winger, .forward .center-forward, .mid .cm, .mid .dm {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+.deff {
+	width: 800px;
+	position: relative;
+	top: 50px;
+	margin : 10px auto;
+}
+
+.deff .cb, .sb {
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+
+.forward, .dm, .cb {
+	margin-top :20px;
+}
+
+.winger, .cm, .sd {
+	margin-top: -20px;
+}
+
+.keeper {
+	width: 300px;
+	position: relative;
+	top: 67px;
+	margin : 10px auto;
+}
+
+/* Stats */
+
+.main {
+	position: relative;
+	background-color: blue;
+}
+
+
+.p-pos {
+	width: 40px;
+	float:left;
+}
+
+.p-position {
+	width: 40px;
+	border: 2px outset white;
+}
+
+.position-gk {
+	background-color: olive;
+}
+
+.position-deff {
+	background-color: lightblue ;
+}
+
+.position-mid {
+	background-color: green;
+}
+
+.position-forward {
+	background-color: red;
+}
+
+.p-pos .p-position .p {
+	color: white;
+	font-size: 16px;
+}
+
+.p-num {
+	float: left;
+	width: 35px;
+	margin-left: 5px;
+}
+
+.p-number {
+	border: 2px outset white;
+	background-color: blue;
+	text-align: right;
+	padding-right: 4px;
+}
+
+.p-num .p-number .p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p-nam {
+	float: left;
+	width: 150px;
+}
+
+.p-name {
+	border: 2px outset white;
+	background-color: blue;
+	text-align: center;
+}
+
+.p-nam .selected {
+	border: 2px solid yellow;
+}
+
+.p-nam .p-name .p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p-port {
+	float: left;
+	border: 1px outset white;
+	margin-left: 80px;
+	background-color: blue;
+}
+
+.p-port .p-img {
+	width: 170px;
+	background-color: blue;
+}
+
+.p-desc {
+	width: 170px;
+	float: left;
+	border: 1px outset white;
+	position: absolute;
+	top: 235px;
+	left: 330px;
+}
+
+.p-desc .p-desc-left {
+	width: 70px;
+}
+
+.p-desc .p-desc-right{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 70px;
+}
+
+.p-desc .p-desc-left .p {
+	display: block;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.p-desc .p-desc-right .p img {
+	width: 31px;
+	position: relative;
+	top: 4px;
+	border: 1px solid black;
+	margin-left: 2px;
+}
+
+.p-desc .p-desc-right .p {
+	display: block;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.p-desc .p-desc-left .p, .p-desc .p-desc-right .p, 
+.p-stats .p-stats-nam .p, .p-stats .p-stats-num .p {
+	color: white;
+	font-weight: bold;
+}
+
+.dg {
+	background-color: darkgreen ;
+}
+
+.dsg {
+	background-color: darkslategray;
+}
+
+.p-stats {
+	width: 250px;
+	float: left;
+	border: 1px outset white;
+	position: relative;
+	top: 1px;
+	left: 10px;	
+}
+
+.p-stats .p-stats-nam {
+	float:left;
+	width: 150px;
+	text-align: left;
+}
+
+.p-stats .p-stats-num{
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+
+.p-stats .p-stats-nam .p, .p-stats .p-stats-num .p{
+	display: block;
+
+}
+
+.p-stats .p-stats-nam .p {
+	padding-left: 5px;
+}
+
+.p-stats-grad {
+	position: relative;
+	top: 10px;
+	left: 185px;	
+}
+
+.p-stats .p-stats-grad .p-stats-gradi {
+	width: 70px;
+	height: 28px;
+	position: relative;
+	top: -10px;
+	left: -5px;
+}
+
+.p-stats .p-stats-grad .kotak {
+	width: 50px;
+	height: 10px;
+}
+
+.p-stats .p-stats-grad .bg {
+	background-color: darkred;
+	position: absolute;
+	top: -10px;
+	left: -10px;	
+}
+
+.p-stats .p-stats-grad .kotak .nine {
+	width: 45px;
+}
+
+.p-stats .p-stats-grad .kotak .eight {
+	width: 40px;
+}
+
+.p-stats .p-stats-grad .kotak .seven {
+	width: 35px;
+}
+
+.p-stats .p-stats-grad .kotak .six {
+	width: 30px;
+}
+
+.p-stats .p-stats-grad .kotak .five {
+	width: 25px;
+}
+
+.p-stats .p-stats-grad .kotak .four {
+	width: 20px;
+}
+
+.p-stats .p-stats-grad .kotak .three {
+	width: 15px;
+}
+
+.p-stats .p-stats-grad .kotak .two {
+	width: 10px;
+}
+
+.p-stats .p-stats-grad .kotak .one {
+	width: 5px;
+}
+
+.p-stats .p-stats-grad .kotak .zero {
+	width: 3px;
+}
+
+.p-stats .p-stats-grad .p-stats-gradient {
+	background: linear-gradient(to left, red, yellow);
+	position: absolute;
+	top: -20px;
+	left: -20px;
+}
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
